@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rick and Morty</title>
+  </head>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+    
+        display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
+     grid-gap:1rem;
+    }
+    .card {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+ text-align: center;
+ }
+ .card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+ input {
+      border: 3px solid black;
+      border-radius: 15px;
+      padding: 15px;
+      width: 45%;
+      margin: 15px;
+      font-size: 45px;
+      background-color: black;
+      color: white;
+      opacity: 0.7;
+    }
+    input:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+  
+      <form action="/" method="get">
+        <input type="submit" value="Zpět" class="butt" />
+      </form>
+    
+ 
+
+    <div class="container">
+      <% locations.forEach(location => { %>
+      <div class="card">
+       
+          <h4 class="card-title"><%= location.name %></h4>
+          <div class="card-subtitle text-muted mb-2"></div>
+          <div class="card-text mb-2">Typ: <%= location.type %></div>
+          <div class="card-text mb-2">Dimenze: <%= location.dimension %></div>      
+          </form>
+       
+      </div>
+      <% }) %>
+    </div>
+  </body>
+</html>

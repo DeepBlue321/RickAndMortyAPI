@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    input {
+      border: 3px solid black;
+      border-radius: 15px;
+      padding: 15px;
+      width: 45%;
+      margin: 15px;
+      font-size: 45px;
+      background-color: black;
+      color: white;
+      opacity: 0.7;
+    }
+    input:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <img
+      style="width: 100%;"
+      src="//cdn.onebauer.media/one/empire-images/features/59d7b5d65d36143c05ed7dc1/mzzHr6g1yvZ05Mc7hNj3tUdy2bM.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg"
+      alt="poster"
+    />
+    <div class="container">
+      <form action="characters" method="get">
+        <input type="submit" value="postavy" class="butt" />
+      </form>
+      <form action="locations" method="get">
+        <input type="submit" value="lokace" class="butt" />
+      </form>
+    </div>
+  </body>
+</html>
